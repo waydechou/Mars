@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>city_id</key>
+		<string>5173</string>
+		<key>client_secret_bizare</key>
+		<string>b31670077707f83a25fe670bc958b7a9</string>
+		<key>client_secret_comment_home</key>
+		<string>dabf59be7059a236ff80b7bd53a1fc95</string>
+		<key>client_secret_topic</key>
+		<string>8bf3f620b2608a513b88e54a723daf06</string>
+	</dict>
+	<dict>
+		<key>city_id</key>
+		<string>890</string>
+		<key>client_secret_bizare</key>
+		<string>e2787876a3d0d4fadac72a09548da474</string>
+		<key>client_secret_comment_home</key>
+		<string>fdce197f947b17aacccaa2234c681152</string>
+		<key>client_secret_topic</key>
+		<string>6167884b5b4682d9c28f251a0328de31</string>
+	</dict>
+	<dict>
+		<key>city_id</key>
+		<string>5171</string>
+		<key>client_secret_bizare</key>
+		<string>1229c6b26b0f1061af3c5e33c295e598</string>
+		<key>client_secret_comment_home</key>
+		<string>cb244a25b5b71e623120aed101d175a8</string>
+		<key>client_secret_topic</key>
+		<string>0c201d0f55c1c310feb0811b3fd5fda6</string>
+	</dict>
+	<dict>
+		<key>city_id</key>
+		<string>5172</string>
+		<key>client_secret_bizare</key>
+		<string>cf592d7ed719ad9b724223c921994a7c</string>
+		<key>client_secret_comment_home</key>
+		<string>1211ce3970d0a740c566dc8d5602ed44</string>
+		<key>client_secret_topic</key>
+		<string>59ec71432d9c13a8c9b2a1c9cddeb4cb</string>
+	</dict>
+	<dict>
+		<key>city_id</key>
+		<string>5175</string>
+		<key>client_secret_bizare</key>
+		<string>f46b78f3bedc3ee0cc72c5f0a4f2251c</string>
+		<key>client_secret_comment_home</key>
+		<string>61144898139e9ff9ede11147a398ddce</string>
+		<key>client_secret_topic</key>
+		<string>9888c2eed0b351ba8c12e5b34ce483e8</string>
+	</dict>
+	<dict>
+		<key>city_id</key>
+		<string>5121</string>
+		<key>client_secret_bizare</key>
+		<string>748e9c9653025feb5d3c2aad9b2715d7</string>
+		<key>client_secret_comment_home</key>
+		<string>eeab9f112f9f6da9e0c906ac35c74cd2</string>
+		<key>client_secret_topic</key>
+		<string>127ba86230a1f1221035e2677911b7b6</string>
+	</dict>
+</array>
+</plist>

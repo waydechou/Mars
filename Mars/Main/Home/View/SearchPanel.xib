@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchPanel">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门地点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqo-Iu-Lbo">
+                    <rect key="frame" x="8" y="21" width="78" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="9VN-dJ-8Fj"/>
+                        <constraint firstAttribute="height" constant="35" id="mmm-PN-5wb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yung Kee Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gH-wn-zAb">
+                    <rect key="frame" x="8" y="83" width="160" height="21"/>
+                    <color key="backgroundColor" red="0.6241540318253147" green="0.8203956117021276" blue="0.37074585832899032" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izt-Xq-gTc">
+                    <rect key="frame" x="8" y="64" width="414" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="jc1-kd-5Yt"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Lobbt at the Peninsula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xk-Lv-hVM">
+                    <rect key="frame" x="8" y="122" width="205" height="21"/>
+                    <color key="backgroundColor" red="0.62415403179999995" green="0.82039561169999997" blue="0.37074585830000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yardbird" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpM-TA-vX9">
+                    <rect key="frame" x="186" y="83" width="65" height="21"/>
+                    <color key="backgroundColor" red="0.62415403179999995" green="0.82039561169999997" blue="0.37074585830000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yung Kee Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfW-kC-qQc">
+                    <rect key="frame" x="231" y="122" width="160" height="21"/>
+                    <color key="backgroundColor" red="0.62415403179999995" green="0.82039561169999997" blue="0.37074585830000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxJ-FV-dLL">
+                    <rect key="frame" x="8" y="161" width="44" height="21"/>
+                    <color key="backgroundColor" red="0.62415403179999995" green="0.82039561169999997" blue="0.37074585830000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yung Kee Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnD-X3-eE9">
+                    <rect key="frame" x="70" y="161" width="160" height="21"/>
+                    <color key="backgroundColor" red="0.62415403179999995" green="0.82039561169999997" blue="0.37074585830000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tpM-TA-vX9" firstAttribute="top" secondItem="izt-Xq-gTc" secondAttribute="bottom" constant="18" id="2jF-NG-fmU"/>
+                <constraint firstItem="WfW-kC-qQc" firstAttribute="top" secondItem="tpM-TA-vX9" secondAttribute="bottom" constant="18" id="37J-BR-NYc"/>
+                <constraint firstItem="lxJ-FV-dLL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="80b-ES-qfQ"/>
+                <constraint firstItem="9Xk-Lv-hVM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Anm-Bp-KSk"/>
+                <constraint firstItem="WfW-kC-qQc" firstAttribute="leading" secondItem="9Xk-Lv-hVM" secondAttribute="trailing" constant="18" id="CF3-WX-I8X"/>
+                <constraint firstAttribute="trailing" secondItem="izt-Xq-gTc" secondAttribute="trailing" constant="-8" id="JFC-XT-m3f"/>
+                <constraint firstItem="izt-Xq-gTc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="JeJ-QP-nJO"/>
+                <constraint firstItem="9Xk-Lv-hVM" firstAttribute="top" secondItem="tpM-TA-vX9" secondAttribute="bottom" constant="18" id="KF4-3V-QSb"/>
+                <constraint firstItem="OnD-X3-eE9" firstAttribute="top" secondItem="WfW-kC-qQc" secondAttribute="bottom" constant="18" id="Ktl-5i-sNd"/>
+                <constraint firstItem="5gH-wn-zAb" firstAttribute="top" secondItem="izt-Xq-gTc" secondAttribute="bottom" constant="18" id="NMJ-L0-FQq"/>
+                <constraint firstItem="OnD-X3-eE9" firstAttribute="leading" secondItem="lxJ-FV-dLL" secondAttribute="trailing" constant="18" id="VVZ-Bm-qdS"/>
+                <constraint firstItem="tpM-TA-vX9" firstAttribute="leading" secondItem="5gH-wn-zAb" secondAttribute="trailing" constant="18" id="Wpk-JP-VmB"/>
+                <constraint firstItem="5gH-wn-zAb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ZWh-vt-i3B"/>
+                <constraint firstItem="vqo-Iu-Lbo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="h9t-hp-7iA"/>
+                <constraint firstItem="izt-Xq-gTc" firstAttribute="top" secondItem="vqo-Iu-Lbo" secondAttribute="bottom" constant="8" id="meC-7V-hpf"/>
+                <constraint firstItem="lxJ-FV-dLL" firstAttribute="top" secondItem="9Xk-Lv-hVM" secondAttribute="bottom" constant="18" id="muA-N0-0Mk"/>
+                <constraint firstItem="izt-Xq-gTc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ylL-H0-gTj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label11" destination="5gH-wn-zAb" id="uay-ts-btM"/>
+                <outlet property="label12" destination="tpM-TA-vX9" id="BV0-De-jwH"/>
+                <outlet property="label21" destination="9Xk-Lv-hVM" id="7Ok-n4-MHW"/>
+                <outlet property="label22" destination="WfW-kC-qQc" id="vzf-nb-cLl"/>
+                <outlet property="label31" destination="lxJ-FV-dLL" id="dUY-Da-Xwm"/>
+                <outlet property="label32" destination="OnD-X3-eE9" id="KHf-Do-IYm"/>
+            </connections>
+            <point key="canvasLocation" x="161" y="140"/>
+        </view>
+    </objects>
+</document>
