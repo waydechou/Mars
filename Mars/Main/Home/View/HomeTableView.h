@@ -11,13 +11,8 @@
 #import "CommentCell.h"
 #import "BizareaInfoCell.h"
 
-@class HomeTableView;
-@protocol HomeTableViewDelegate <NSObject>
 
-- (void)homeTableView:(HomeTableView *_Nullable)homeTableView didSelectRowAtIndexPath:(NSIndexPath *_Nullable)indexPath;
-
-@end
-
+@protocol HomeTableViewDelegate;
 @interface HomeTableView : UITableView <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) NSArray *_Nullable bizares;
@@ -26,8 +21,10 @@
 
 @property (weak, nonatomic) id <HomeTableViewDelegate> _Nullable homeDelegate;
 
-//@property (strong, nonatomic) NSIndexPath * _Nullable currentIndexPath;
-
-//- (void)selectRowWithBlockHandler:(nullable void (^)(HomeTableView *_Nullable homeTableView, NSIndexPath *_Nullable indexPath))handle;
 @end
 
+@protocol HomeTableViewDelegate <NSObject>
+
+- (void)homeTableView:(HomeTableView *_Nullable)homeTableView didSelectRowAtIndexPath:(NSIndexPath *_Nullable)indexPath;
+
+@end

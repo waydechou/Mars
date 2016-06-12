@@ -10,13 +10,8 @@
 		B74D41931D033075000ECE4E /* mapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B74D41911D033075000ECE4E /* mapIcon.png */; };
 		B74D41941D033075000ECE4E /* mapIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B74D41921D033075000ECE4E /* mapIcon@2x.png */; };
 		B7560BCE1CF89F68001B4720 /* HomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7560BCD1CF89F68001B4720 /* HomeTableView.m */; };
-		B77CB1C61D06DFAC00676443 /* libobjc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B77CB1C51D06DFAC00676443 /* libobjc.tbd */; };
+		B767C2E31D090A8F008DF1EC /* MarsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B767C2E11D090A8F008DF1EC /* MarsModel.xcdatamodeld */; };
 		B7899F891C35FD6500E1383E /* TimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7899F881C35FD6500E1383E /* TimelineViewController.m */; };
-		B7899F971C35FDCB00E1383E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B7899F8B1C35FDCB00E1383E /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B7899F981C35FDCB00E1383E /* SinaWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7899F8D1C35FDCB00E1383E /* SinaWeibo.bundle */; };
-		B7899F991C35FDCB00E1383E /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = B7899F8F1C35FDCB00E1383E /* SinaWeibo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B7899F9A1C35FDCB00E1383E /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7899F911C35FDCB00E1383E /* SinaWeiboAuthorizeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B7899F9B1C35FDCB00E1383E /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B7899F941C35FDCB00E1383E /* SinaWeiboRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B7899F9F1C35FE2E00E1383E /* TimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7899F9D1C35FE2E00E1383E /* TimeLineCell.m */; };
 		B7899FA01C35FE2E00E1383E /* TimeLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7899F9E1C35FE2E00E1383E /* TimeLineCell.xib */; };
 		B7899FA31C35FE4700E1383E /* TimeLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7899FA21C35FE4700E1383E /* TimeLineModel.m */; };
@@ -222,19 +217,9 @@
 		B74D41921D033075000ECE4E /* mapIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapIcon@2x.png"; sourceTree = "<group>"; };
 		B7560BCC1CF89F68001B4720 /* HomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableView.h; sourceTree = "<group>"; };
 		B7560BCD1CF89F68001B4720 /* HomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableView.m; sourceTree = "<group>"; };
-		B77CB1C51D06DFAC00676443 /* libobjc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.tbd; path = usr/lib/libobjc.tbd; sourceTree = SDKROOT; };
+		B767C2E21D090A8F008DF1EC /* MarsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarsModel.xcdatamodel; sourceTree = "<group>"; };
 		B7899F871C35FD6500E1383E /* TimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineViewController.h; sourceTree = "<group>"; };
 		B7899F881C35FD6500E1383E /* TimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineViewController.m; sourceTree = "<group>"; };
-		B7899F8A1C35FDCB00E1383E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		B7899F8B1C35FDCB00E1383E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		B7899F8D1C35FDCB00E1383E /* SinaWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SinaWeibo.bundle; sourceTree = "<group>"; };
-		B7899F8E1C35FDCB00E1383E /* SinaWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeibo.h; sourceTree = "<group>"; };
-		B7899F8F1C35FDCB00E1383E /* SinaWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeibo.m; sourceTree = "<group>"; };
-		B7899F901C35FDCB00E1383E /* SinaWeiboAuthorizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboAuthorizeView.h; sourceTree = "<group>"; };
-		B7899F911C35FDCB00E1383E /* SinaWeiboAuthorizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboAuthorizeView.m; sourceTree = "<group>"; };
-		B7899F921C35FDCB00E1383E /* SinaWeiboConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboConstants.h; sourceTree = "<group>"; };
-		B7899F931C35FDCB00E1383E /* SinaWeiboRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboRequest.h; sourceTree = "<group>"; };
-		B7899F941C35FDCB00E1383E /* SinaWeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboRequest.m; sourceTree = "<group>"; };
 		B7899F9C1C35FE2E00E1383E /* TimeLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineCell.h; sourceTree = "<group>"; };
 		B7899F9D1C35FE2E00E1383E /* TimeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineCell.m; sourceTree = "<group>"; };
 		B7899F9E1C35FE2E00E1383E /* TimeLineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeLineCell.xib; sourceTree = "<group>"; };
@@ -533,45 +518,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B77CB1C61D06DFAC00676443 /* libobjc.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B7899F8C1C35FDCB00E1383E /* JSONKit */ = {
+		B767C2DD1D090A5E008DF1EC /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				B7899F8A1C35FDCB00E1383E /* JSONKit.h */,
-				B7899F8B1C35FDCB00E1383E /* JSONKit.m */,
+				B767C2E11D090A8F008DF1EC /* MarsModel.xcdatamodeld */,
 			);
-			path = JSONKit;
-			sourceTree = "<group>";
-		};
-		B7899F951C35FDCB00E1383E /* SinaWeibo */ = {
-			isa = PBXGroup;
-			children = (
-				B7899F8D1C35FDCB00E1383E /* SinaWeibo.bundle */,
-				B7899F8E1C35FDCB00E1383E /* SinaWeibo.h */,
-				B7899F8F1C35FDCB00E1383E /* SinaWeibo.m */,
-				B7899F901C35FDCB00E1383E /* SinaWeiboAuthorizeView.h */,
-				B7899F911C35FDCB00E1383E /* SinaWeiboAuthorizeView.m */,
-				B7899F921C35FDCB00E1383E /* SinaWeiboConstants.h */,
-				B7899F931C35FDCB00E1383E /* SinaWeiboRequest.h */,
-				B7899F941C35FDCB00E1383E /* SinaWeiboRequest.m */,
-			);
-			path = SinaWeibo;
-			sourceTree = "<group>";
-		};
-		B7899F961C35FDCB00E1383E /* sinaweibo_ios_sdk */ = {
-			isa = PBXGroup;
-			children = (
-				B7899F8C1C35FDCB00E1383E /* JSONKit */,
-				B7899F951C35FDCB00E1383E /* SinaWeibo */,
-			);
-			name = sinaweibo_ios_sdk;
-			path = "../../../../Desktop/04-HZ88微博-表情面板的封装/01-HZ88微博-架构的搭建/Main/Common/sinaweibo_ios_sdk";
+			path = Database;
 			sourceTree = "<group>";
 		};
 		B794A9B31D02A65000F86A85 /* category */ = {
@@ -664,7 +622,6 @@
 		B79DA32D1C36040D00F0C99D /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
-				B7899F961C35FDCB00E1383E /* sinaweibo_ios_sdk */,
 				B7F067C11C35FBD700FCBD4B /* YYModel */,
 				B79DA50F1CF6CD9200F0C99D /* AFNetworking */,
 				B79DA5961CF6F17300F0C99D /* SDWebImage */,
@@ -932,6 +889,7 @@
 			isa = PBXGroup;
 			children = (
 				B79DA38D1C3631AC00F0C99D /* common.h */,
+				B767C2DD1D090A5E008DF1EC /* Database */,
 				B7C009A21C35F9CF0089F019 /* DIYClasses */,
 				B79DA38E1C3631AC00F0C99D /* Controllers */,
 			);
@@ -1109,7 +1067,6 @@
 		B7FFBC3A1CF57110007C1C6E = {
 			isa = PBXGroup;
 			children = (
-				B77CB1C51D06DFAC00676443 /* libobjc.tbd */,
 				B7FFBC451CF57110007C1C6E /* Mars */,
 				B7FFBC441CF57110007C1C6E /* Products */,
 			);
@@ -1360,7 +1317,6 @@
 				B794AA131D02A65000F86A85 /* wine_n@2x.png in Resources */,
 				B79B786A1C35FC7B008D1482 /* DINCond-Bold.otf in Resources */,
 				B794AA031D02A65000F86A85 /* rest_n.png in Resources */,
-				B7899F981C35FDCB00E1383E /* SinaWeibo.bundle in Resources */,
 				B7FA46661CFBD59400887C62 /* BizareaInfoCell.xib in Resources */,
 				B794A9FE1D02A65000F86A85 /* market_n.png in Resources */,
 				B7D63F8E1D0324A40093E31B /* comment_null.png in Resources */,
@@ -1411,13 +1367,11 @@
 				B7F067D51C35FD5E00FCBD4B /* GuideTableViewCell.m in Sources */,
 				B79DA51D1CF6CD9200F0C99D /* AFHTTPSessionManager.m in Sources */,
 				B79DA3961C3631AC00F0C99D /* BaseNavigationController.m in Sources */,
-				B7899F971C35FDCB00E1383E /* JSONKit.m in Sources */,
 				B79DA5221CF6CD9200F0C99D /* AFURLSessionManager.m in Sources */,
 				B79DA3971C3631AC00F0C99D /* BaseTabBarController.m in Sources */,
 				B7C009BE1C35FADD0089F019 /* MarsRequestDepartment.m in Sources */,
 				B7899FA31C35FE4700E1383E /* TimeLineModel.m in Sources */,
 				B7D63F661D030ED40093E31B /* HomeViewController.m in Sources */,
-				B7899F991C35FDCB00E1383E /* SinaWeibo.m in Sources */,
 				B7C009B91C35F9CF0089F019 /* WXPhotoBrowser.m in Sources */,
 				B79F6ABF1CFA8DA900650DD2 /* UIImageView+AFNetworking.m in Sources */,
 				B79F6AA41CFA854500650DD2 /* StoreInfoDetailTableView.m in Sources */,
@@ -1438,14 +1392,12 @@
 				B79F6ABD1CFA8DA900650DD2 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				B79DA5BC1CF6F17300F0C99D /* SDWebImageDecoder.m in Sources */,
 				B79F6AC01CFA8DA900650DD2 /* UIProgressView+AFNetworking.m in Sources */,
-				B7899F9B1C35FDCB00E1383E /* SinaWeiboRequest.m in Sources */,
 				B7F067C81C35FBD700FCBD4B /* YYClassInfo.m in Sources */,
 				B79DA5BE1CF6F17300F0C99D /* SDWebImageDownloaderOperation.m in Sources */,
 				B7965C9D1C360B3D003B1512 /* BizareInfoViewController.m in Sources */,
 				B7D63F611D02F21B0093E31B /* SearchPanel.m in Sources */,
 				B7F067C71C35FBD700FCBD4B /* NSObject+YYModel.m in Sources */,
 				B79B78711CF721C6008D1482 /* SearchViewController.m in Sources */,
-				B7899F9A1C35FDCB00E1383E /* SinaWeiboAuthorizeView.m in Sources */,
 				B79DA5B81CF6F17300F0C99D /* MKAnnotationView+WebCache.m in Sources */,
 				B79DA5BB1CF6F17300F0C99D /* SDWebImageCompat.m in Sources */,
 				B7899F9F1C35FE2E00E1383E /* TimeLineCell.m in Sources */,
@@ -1457,6 +1409,7 @@
 				B79DA5C51CF6F17300F0C99D /* UIImageView+HighlightedWebCache.m in Sources */,
 				B7F066561C361C37007F08E4 /* BizareViewController.m in Sources */,
 				B7BA39E61C366106007079DF /* CommentCell.m in Sources */,
+				B767C2E31D090A8F008DF1EC /* MarsModel.xcdatamodeld in Sources */,
 				B79F6AE61CFAC11200650DD2 /* QueryCell.m in Sources */,
 				B79DA5C21CF6F17300F0C99D /* UIImage+GIF.m in Sources */,
 				B79F6ABA1CFA8DA900650DD2 /* AFAutoPurgingImageCache.m in Sources */,
@@ -1617,6 +1570,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B767C2E11D090A8F008DF1EC /* MarsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B767C2E21D090A8F008DF1EC /* MarsModel.xcdatamodel */,
+			);
+			currentVersion = B767C2E21D090A8F008DF1EC /* MarsModel.xcdatamodel */;
+			path = MarsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B7FFBC3B1CF57110007C1C6E /* Project object */;
 }

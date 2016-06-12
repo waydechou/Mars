@@ -21,7 +21,6 @@ static NSString *const commentIndetifier = @"comment";
     CGFloat _newoffsetY;
     UIButton *_commentBtn;
 }
-
 @end
 
 @implementation HomeTableView
@@ -56,7 +55,6 @@ static NSString *const commentIndetifier = @"comment";
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
     return 1 + 3 + _comments.count;
 }
 

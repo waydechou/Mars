@@ -45,6 +45,7 @@
     NSString *imageURL = [string cutToFitAURL];
 
     [self.coverImageView sd_setImageWithURL:[NSURL URLWithString:imageURL]];
+    NSLog(@"%@", [[[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask] firstObject]);
     self.EnglishNameLabel.text = _guideModel.english_name;
     self.EnglishNameLabel.font = [UIFont fontWithName:@"ITC Bookman Demi" size:25];
     

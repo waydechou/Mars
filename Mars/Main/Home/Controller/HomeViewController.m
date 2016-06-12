@@ -177,27 +177,27 @@ static void *const topicKey = "topicKey";
 #pragma mark - NavigationBar 
 - (void)customizeNavigationBar:(BOOL)isTohide {
         if (!isTohide && !_textField) {
-            _textField = [[SearchTextField alloc] initWithFrame:CGRectMake(kScreenWidth * 0.29, 5, kScreenWidth * 0.7, 30)];
+            _textField = [[SearchTextField alloc] initWithFrame:CGRectMake(kScreenWidth * 0.29, 5, kScreenWidth * 0.69, 30)];
             _textField.borderStyle = UITextBorderStyleRoundedRect;
             _textField.textColor = [UIColor whiteColor];
             _textField.backgroundColor = [UIColor blackColor];
             _textField.attributedPlaceholder = Default_Placeholder;
             _textField.delegate = self;
 
-            placeHolderImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 5, 20, 20)];
+            placeHolderImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 20, 20)];
             placeHolderImageView.image = [UIImage imageNamed:@"search_ic"];
             _textField.leftView = placeHolderImageView;
             _textField.leftViewMode = UITextFieldViewModeAlways;
             [self.navigationController.navigationBar addSubview:_textField];
 
-            _locateView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth * 0.06, 5, 24, 30)];
+            _locateView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 5, 24, 30)];
             _locateView.image = [UIImage imageNamed:@"nav_location_icon"];
             _locateView.userInteractionEnabled = YES;
             [_locateView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backToCityList:)]];
             _locateView.tag = Nav_ImgView_Tag;
             [self.navigationController.navigationBar addSubview:_locateView];
 
-            _cityLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_locateView.frame) + 8, 5, 0.14 * kScreenWidth, 30)];
+            _cityLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_locateView.frame) + 5, 5, 0.3 * kScreenWidth - 37, 30)];
             _cityLabel.tag = Nav_ImgView_Tag + 1;
             _cityLabel.font = [UIFont systemFontOfSize:18.0];
 
@@ -217,12 +217,12 @@ static void *const topicKey = "topicKey";
         [self.navigationController.navigationBar viewWithTag:Nav_ImgView_Tag].hidden = YES;
         [self.navigationController.navigationBar viewWithTag:Nav_ImgView_Tag + 1].hidden = YES;
         CGRect frame = textField.frame;
-        frame.size.width = 0.8 * kScreenWidth;
+        frame.size.width = 0.789 * kScreenWidth;
         frame.origin = CGPointMake(kScreenWidth * 0.06, 5);
         textField.frame = frame;
 
         if (!_cancelButton) {
-            _cancelButton = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth * 0.88, 5, 44, 30)];
+            _cancelButton = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth - 49, 5, 44, 30)];
             [_cancelButton setTitleColor:[UIColor colorWithRed:86 / 155.0 green:110 / 155.0 blue:74 / 155.0 alpha:1] forState:UIControlStateNormal];
             [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
             _cancelButton.titleLabel.font = [UIFont systemFontOfSize:18.0];

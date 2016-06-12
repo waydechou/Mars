@@ -7,13 +7,9 @@
 //
 
 
-
-
-
 #import "TimelineViewController.h"
 #import "HTTPServer.h"
 #import "AppDelegate.h"
-#import "SinaWeibo.h"
 #import "TimeLineCell.h"
 #import "NSString+fitToURL.h"
 #import "MapViewController.h"
@@ -22,7 +18,7 @@
 #define kAppKey             @"1798910114"
 #define kAppSecret          @"f4451b42bdcfeffc8509d19427fae919"
 
-@interface TimelineViewController () <SinaWeiboDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface TimelineViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *timeLineTableView;
 
 @property (nonatomic,strong) NSMutableArray *modelArray;
@@ -41,21 +37,21 @@
     _timeLineTableView.delegate = self;
     _timeLineTableView.dataSource = self;
     _timeLineTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
-    
-    
-    //微博登陆
-    SinaWeibo *sinaweibo = [self sinaweibo];
-    sinaweibo.delegate = self;
-    
-    if (!(sinaweibo.isAuthValid)) {
-        
-        [sinaweibo logIn];
-        
-    }
-    
-    
-    NSLog(@"weibologin");
-    
+//    
+//    
+//    //微博登陆
+//    SinaWeibo *sinaweibo = [self sinaweibo];
+//    sinaweibo.delegate = self;
+//    
+//    if (!(sinaweibo.isAuthValid)) {
+//        
+//        [sinaweibo logIn];
+//        
+//    }
+//    
+//    
+//    NSLog(@"weibologin");
+
 }
 
 - (void)toSomeWhere:(NSNotification *)noti {
@@ -65,28 +61,28 @@
     [self.navigationController pushViewController:mapVC animated:YES];
 }
 
-- (SinaWeibo *)sinaweibo
-{
-    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    return delegate.sinaweibo;
-}
+//- (SinaWeibo *)sinaweibo
+//{
+//    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    return delegate.sinaweibo;
+//}
 
 #pragma mark - SinaWeiboDelegate
 
-- (void)sinaweiboDidLogIn:(SinaWeibo *)sinaweibo {
-    
-    //存储Oauth认证的相关信息
-    
-    NSDictionary *authData = [NSDictionary dictionaryWithObjectsAndKeys:
-                              sinaweibo.accessToken, @"AccessTokenKey",
-                              sinaweibo.expirationDate, @"ExpirationDateKey",
-                              sinaweibo.userID, @"UserIDKey",
-                              sinaweibo.refreshToken, @"refresh_token", nil];
-    [[NSUserDefaults standardUserDefaults] setObject:authData forKey:@"SinaWeiboAuthData"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    NSLog(@"%@",sinaweibo.userID);
-}
+//- (void)sinaweiboDidLogIn:(SinaWeibo *)sinaweibo {
+//    
+//    //存储Oauth认证的相关信息
+//    
+//    NSDictionary *authData = [NSDictionary dictionaryWithObjectsAndKeys:
+//                              sinaweibo.accessToken, @"AccessTokenKey",
+//                              sinaweibo.expirationDate, @"ExpirationDateKey",
+//                              sinaweibo.userID, @"UserIDKey",
+//                              sinaweibo.refreshToken, @"refresh_token", nil];
+//    [[NSUserDefaults standardUserDefaults] setObject:authData forKey:@"SinaWeiboAuthData"];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+//    
+//    NSLog(@"%@",sinaweibo.userID);
+//}
 
 #pragma mark - UITableView
 
