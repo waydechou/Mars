@@ -19,6 +19,7 @@
 #import "GuideTableViewController.h"
 #import "SearchTextField.h"
 #import "MarsRequestDepartment.h"
+#import "UMSocial.h"
 
 static void *const topicKey = "topicKey";
 
@@ -171,7 +172,15 @@ static void *const topicKey = "topicKey";
 }
 
 - (void)redirectToMore:(NSNotification *)notification {
-    [self.navigationController pushViewController:[[HelloViewController alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[HelloViewController alloc] init] animated:YES];
+
+    NSString *shareText = @"Hello";
+    [UMSocialSnsService presentSnsIconSheetView:self
+                                         appKey:nil
+                                      shareText:shareText
+                                     shareImage:[UIImage imageNamed:@"AppIcon60x60"]
+                                shareToSnsNames:[NSArray arrayWithObjects:UMShareToSms, UMShareToQzone, UMShareToRenren, UMShareToTencent, UMShareToSina, UMShareToEmail, UMShareToWechatTimeline, nil]
+                                       delegate:nil];
 }
 
 #pragma mark - NavigationBar 
