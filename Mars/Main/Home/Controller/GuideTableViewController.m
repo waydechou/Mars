@@ -31,8 +31,8 @@ static const CGFloat cellHeight = 120.0;
 #pragma mark - Life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self loadCityInfo];
 
+    [self loadCityInfo];
     [self loadData];
 
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -68,11 +68,9 @@ static const CGFloat cellHeight = 120.0;
                                  };
 
     [HTTPServer requestWithURL:@"system/area/citylist" parameters:parameters fileData:nil HTTPMethod:@"POST" completed:^(NSURLSessionDataTask * _Nullable task, id  _Nonnull result) {
-
         NSArray *cities = result[@"data"];
 
         for (NSDictionary *city in cities) {
-
             GuideModel *model = [GuideModel yy_modelWithDictionary:city];
             [self.cities addObject:model];
         }
@@ -90,25 +88,21 @@ static const CGFloat cellHeight = 120.0;
 
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
     return self.cities.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     GuideTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"guideCell" forIndexPath:indexPath];
-    
     cell.guideModel = self.cities[indexPath.row];
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-
     return cellHeight;
 }
 
@@ -142,48 +136,4 @@ static const CGFloat cellHeight = 120.0;
         discoverVC.topicDic = _cityInfo[indexPath.row];
     } completion:NULL];
 }
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

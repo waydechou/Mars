@@ -183,8 +183,8 @@
     NSInteger position = guesture.view.tag - 10000;
     TopicModel *topic = _topics[position];
     TopicDetailTableViewController *topicDetailViewController = [[TopicDetailTableViewController alloc] init];
+
     NSArray *topics = objc_getAssociatedObject(self, "topicKey");
-    NSLog(@"%@", topics[position]);
     topicDetailViewController.topic = topics[position];
     topicDetailViewController.title = topic.title;
     [self.navigationController pushViewController:topicDetailViewController animated:YES];

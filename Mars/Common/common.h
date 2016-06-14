@@ -13,6 +13,12 @@
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
+#define IS_WIDESCREEN ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+#define IS_IPHONE ( [ [ [ UIDevice currentDevice ] model ] isEqualToString: @"iPhone" ] )
+#define IS_IPOD   ( [ [ [ UIDevice currentDevice ] model ] isEqualToString: @"iPod touch" ] )
+#define IS_IPHONE_5_SCREEN ( IS_IPHONE && IS_WIDESCREEN )
+
+
 #define Default_Placeholder [[NSAttributedString alloc] initWithString:@"mars" attributes:@{ NSFontAttributeName:  [UIFont fontWithName:@"ITC Bookman Demi" size:22], NSForegroundColorAttributeName: [UIColor whiteColor], NSBaselineOffsetAttributeName: @3, }]
 #define Search_Placeholder [[NSAttributedString alloc] initWithString:@"搜索" attributes:@{NSFontAttributeName:  [UIFont systemFontOfSize:14], NSForegroundColorAttributeName: [UIColor whiteColor], NSBaselineOffsetAttributeName: @-2}];
 

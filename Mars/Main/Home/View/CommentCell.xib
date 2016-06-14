@@ -28,10 +28,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uto-bf-Ocl" customClass="CommentStarBar">
-                        <rect key="frame" x="73" y="40" width="164" height="20"/>
+                        <rect key="frame" x="73" y="40" width="120" height="20"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="164" id="O1N-5e-fdT"/>
+                            <constraint firstAttribute="width" constant="120" id="O1N-5e-fdT"/>
                             <constraint firstAttribute="height" constant="20" id="tCm-Sc-WbM"/>
                         </constraints>
                     </view>
@@ -42,8 +42,8 @@
                             <constraint firstAttribute="width" constant="60" id="yJi-5d-0TA"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn1-rL-h2u">
-                        <rect key="frame" x="247" y="41" width="106" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/人" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn1-rL-h2u">
+                        <rect key="frame" x="203" y="41" width="164" height="17"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="highlightedColor"/>
@@ -122,7 +122,7 @@
                     <constraint firstItem="52O-Rb-PA6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="CXh-C3-Ek8"/>
                     <constraint firstItem="xGj-gV-lDD" firstAttribute="leading" secondItem="52O-Rb-PA6" secondAttribute="trailing" constant="8" id="DhO-8P-KNe"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Ou1-JQ-W7Z" secondAttribute="trailing" id="FWY-g5-4ue"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="rn1-rL-h2u" secondAttribute="trailing" constant="24" id="IH8-lX-hVD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rn1-rL-h2u" secondAttribute="trailing" constant="10" id="IH8-lX-hVD"/>
                     <constraint firstItem="zui-6E-G6X" firstAttribute="centerY" secondItem="cnf-bJ-e7U" secondAttribute="centerY" id="MIv-fe-aBs"/>
                     <constraint firstAttribute="trailingMargin" secondItem="jyD-MN-TTW" secondAttribute="trailing" constant="8" id="MNH-xp-z0j"/>
                     <constraint firstItem="rn1-rL-h2u" firstAttribute="leading" secondItem="uto-bf-Ocl" secondAttribute="trailing" constant="10" id="Pfo-1H-9oM"/>

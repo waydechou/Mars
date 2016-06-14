@@ -147,7 +147,6 @@ NSString *const BizareaInfoCellRedirectToStore = @"BizareaInfoCellRedirectToStor
 
     infoModel = _storeInfo[3];
     [self.bottomLeftImageView sd_setImageWithURL:[NSURL URLWithString:[infoModel.headpic fitToSubPicURL]]];
-    NSLog(@"%@", infoModel.headpic);
     if (![infoModel.store_name isEqualToString:@""]) {
         self.bottomLeftStoreName.text = infoModel.store_name;
     } else {

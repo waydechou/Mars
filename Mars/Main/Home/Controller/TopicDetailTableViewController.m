@@ -271,7 +271,6 @@ static float headLabelHeight = 0.0;
     } else {
         _headImageView.hidden = YES;
     }
-    NSLog(@"%@", NSStringFromCGRect(_headImageView.frame));
 }
 
 #pragma mark - StoreInfoTableViewCellDelegate

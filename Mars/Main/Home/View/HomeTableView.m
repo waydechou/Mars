@@ -78,13 +78,24 @@ static NSString *const commentIndetifier = @"comment";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    if (indexPath.row == 0) {
-        return 140;
-    } else if (indexPath.row > 0 && indexPath.row < 4) {
-        return 400;
+    if (IS_IPHONE_5_SCREEN) {
+        if (indexPath.row == 0) {
+            return 140;
+        } else if (indexPath.row > 0 && indexPath.row < 4) {
+            return 350;
+        } else {
+            CommentCellLayout *layout = _comments[indexPath.row - 4];
+            return layout.cellHeight;
+        }
     } else {
-        CommentCellLayout *layout = _comments[indexPath.row - 4];
-        return layout.cellHeight;
+        if (indexPath.row == 0) {
+            return 140;
+        } else if (indexPath.row > 0 && indexPath.row < 4) {
+            return 400;
+        } else {
+            CommentCellLayout *layout = _comments[indexPath.row - 4];
+            return layout.cellHeight;
+        }
     }
 }
 

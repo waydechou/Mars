@@ -111,11 +111,20 @@ static float coverImageCenterY = 0.0;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    if (!_isComment) {
-        return cellHeight;
+    if (IS_IPHONE_5_SCREEN) {
+        if (!_isComment) {
+            return 410;
+        } else {
+            CommentCellLayout *cellLayout = _comments[indexPath.row];
+            return cellLayout.cellHeight;
+        }
     } else {
-        CommentCellLayout *cellLayout = _comments[indexPath.row];
-        return cellLayout.cellHeight;
+        if (!_isComment) {
+            return cellHeight;
+        } else {
+            CommentCellLayout *cellLayout = _comments[indexPath.row];
+            return cellLayout.cellHeight;
+        }
     }
 }
 

@@ -46,9 +46,6 @@
     [categoryBackImage addSubview:categoryImage];
 }
 
-- (void)df {
-    NSLog(@"d");
-}
 /*
  7 餐厅 rest
  8 小食点心
