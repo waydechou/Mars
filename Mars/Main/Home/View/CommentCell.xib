@@ -82,10 +82,10 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more_ic.png" translatesAutoresizingMaskIntoConstraints="NO" id="jyD-MN-TTW">
-                        <rect key="frame" x="349" y="105" width="20" height="4"/>
+                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more_ic.png" translatesAutoresizingMaskIntoConstraints="NO" id="jyD-MN-TTW">
+                        <rect key="frame" x="349" y="97" width="20" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="4" id="5gU-v4-xSY"/>
+                            <constraint firstAttribute="height" constant="20" id="5gU-v4-xSY"/>
                             <constraint firstAttribute="width" constant="20" id="DAD-1F-MEt"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="gul-Gw-Esv"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="n2e-4H-h54"/>
